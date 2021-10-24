@@ -13,21 +13,21 @@
         <link href="https://fonts.googleapis.com/css?family=Montserrat|Russo+One" rel="stylesheet">
 </head>
 <body>
-  <nav class="nav navbar navbar-success techfont bg-dark custom-navbar">
-      <ul class="nav navbar-nav">
+  <nav class="nav navbar techfont bg-success custom-navbar">
+      <ul class="nav navbar-nav text-white">
         <li>
           <a class='navbar-brand bigbrand bg-success text-white' href="{% url 'blog_app:post_list' %}">Zele Python Joury</a>
-          <a class="btn btn-warning" href="{% url 'about'%}">About</a>
-          <a class="btn btn-warning" href="https://www.github.com">Github</a>
-          <a class="btn btn-warning" href="https://www.linkedin.com">LinkedIn</a>
+          <a class="btn btn-warning  text-white" href="{% url 'about'%}">About</a>
+          <a class="btn btn-warning  text-white" href="https://www.github.com">Github</a>
+          <a class="btn btn-warning  text-white" href="https://www.linkedin.com">LinkedIn</a>
         </li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
         {% if user.is_authenticated %}
         <li class="nav-pill">
-            <a class="btn btn-warning" href="{% url 'blog_app:post_new' %}" >New Post</a>
-            <a class="btn btn-warning" href="{% url 'blog_app:post_draft_list' %}">Drafts</a>
-            <a class="btn btn-warning" href="{% url 'logout' %}" >Log out</a>
+            <a class="btn btn-warning text-white" href="{% url 'blog_app:post_new' %}" >New Post</a>
+            <a class="btn btn-warning text-white" href="{% url 'blog_app:post_draft_list' %}">Drafts</a>
+            <a class="btn btn-warning text-white" href="{% url 'logout' %}" >Log out</a>
         </li>
         {% else %}
         <li class="nav-pill">

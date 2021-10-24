@@ -1,3 +1,7 @@
+body{
+  background-image: url('images/pic.png');
+}
+
 .techfont{
   font-family: 'Russo One', sans-serif;
   font-size: 1.5em;
