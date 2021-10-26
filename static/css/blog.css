@@ -1,5 +1,5 @@
 body{
-  background-image: ('static/images/pic.jpg');
+  background-image: images("static/images/pic.jpg");
 }
 
 .techfont{

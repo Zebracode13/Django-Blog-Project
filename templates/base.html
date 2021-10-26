@@ -15,13 +15,14 @@
 
         <link href="https://fonts.googleapis.com/css?family=Montserrat|Russo+One" rel="stylesheet">
 </head>
-<body src="{% static 'images/pic.png' %}">
+<body style="background-image: url("static/images/pic.jpg");">
+
   <nav class="nav navbar techfont bg-success custom-navbar">
       <ul class="nav navbar-nav text-white">
         <li>
           <a class='navbar-brand bigbrand bg-success text-white' href="{% url 'blog_app:post_list' %}">Zele Python Joury</a>
           <a class="btn btn-warning  text-white" href="{% url 'about'%}">About</a>
-          <a class="btn btn-warning  text-white" href="https://www.github.com">Github</a>
+          <a class="btn btn-warning  text-white" href="http://github.com/Zebracode13">Github</a>
           <a class="btn btn-warning  text-white" href="https://www.linkedin.com">LinkedIn</a>
         </li>
       </ul>
@@ -41,7 +42,7 @@
       </ul>
 
 </nav>   
-<p>   <a >@{{ user.username }}</a></p>
+<p><a >@{{user.username }}</a></p>
   {# The actual blog_app posts#}
   <div class="container loader">
       {% block content %}
